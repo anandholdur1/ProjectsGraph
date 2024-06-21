@@ -1,0 +1,135 @@
+{
+  "name": "Job_Device_Mapping",
+  "collections": {
+    "Job_Device_Mapping": {
+      "type": "Job_Device_Mapping"
+    }
+  },
+  "objectTypes": {
+    "Job_Device_Mapping": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobMappingIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "locationIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Job_Device_Mapping_organization"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_Device_Mapping_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

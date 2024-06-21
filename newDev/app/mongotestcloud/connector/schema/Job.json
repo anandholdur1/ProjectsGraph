@@ -1,0 +1,1086 @@
+{
+  "name": "Job",
+  "collections": {
+    "Job": {
+      "type": "Job"
+    }
+  },
+  "objectTypes": {
+    "Job": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "awsJobIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "eventType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "integrationType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobDescription": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "jobPayload": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload"
+            }
+          }
+        },
+        "jobType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "locationIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Job_organization"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload": {
+      "fields": {
+        "AlphaRteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_AlphaRteLst.bin"
+            }
+          }
+        },
+        "DrvLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_DrvLst.bin"
+            }
+          }
+        },
+        "GenfareBanner.png": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_GenfareBanner.png"
+            }
+          }
+        },
+        "KeyLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_KeyLst.bin"
+            }
+          }
+        },
+        "MBTK_KEYS_FARE_RULES.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_MBTK_KEYS_FARE_RULES.cfg"
+            }
+          }
+        },
+        "RngLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_RngLst.bin"
+            }
+          }
+        },
+        "RteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_RteLst.bin"
+            }
+          }
+        },
+        "RunLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_RunLst.bin"
+            }
+          }
+        },
+        "ScdLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_ScdLst.bin"
+            }
+          }
+        },
+        "TripLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_TripLst.bin"
+            }
+          }
+        },
+        "account_asl.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_account_asl.bin"
+            }
+          }
+        },
+        "bucketName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "configuration": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_configuration"
+            }
+          }
+        },
+        "deviceLifeCycleStatus": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_deviceLifeCycleStatus"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "dllv5i.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_dllv5i.bin"
+            }
+          }
+        },
+        "fragi.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_fragi.bin"
+            }
+          }
+        },
+        "gacf.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_gacf.bin"
+            }
+          }
+        },
+        "gaci.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_gaci.bin"
+            }
+          }
+        },
+        "gfi.ini": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_gfi.ini"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "netconfig.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_netconfig.cfg"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_organization"
+            }
+          }
+        },
+        "parameters": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters"
+            }
+          }
+        },
+        "timeserver.conf": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_timeserver.conf"
+            }
+          }
+        },
+        "xblstv5.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_xblstv5.bin"
+            }
+          }
+        },
+        "zonetablei.bin": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_zonetablei.bin"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_AlphaRteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_DrvLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_GenfareBanner.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_KeyLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_MBTK_KEYS_FARE_RULES.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_RngLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_RteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_RunLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_ScdLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_TripLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_account_asl.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_configuration": {
+      "fields": {
+        "firmwareVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_deviceLifeCycleStatus": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_dllv5i.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_fragi.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_gacf.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_gaci.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_gfi.ini": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_netconfig.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters": {
+      "fields": {
+        "aws": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_aws"
+            }
+          }
+        },
+        "postDeviceLifeCycleStatus": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_postDeviceLifeCycleStatus"
+            }
+          }
+        },
+        "preDeviceLifeCycleStatus": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_preDeviceLifeCycleStatus"
+            }
+          }
+        },
+        "topics": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_topics"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_aws": {
+      "fields": {
+        "credentialProviderRole": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "credentialProviderUrl": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_postDeviceLifeCycleStatus": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_preDeviceLifeCycleStatus": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_topics": {
+      "fields": {
+        "event": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_topics_event"
+            }
+          }
+        },
+        "log": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_topics_log"
+            }
+          }
+        },
+        "session": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_topics_session"
+            }
+          }
+        },
+        "transaction": {
+          "type": {
+            "nullable": {
+              "object": "Job_jobPayload_parameters_topics_transaction"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_topics_event": {
+      "fields": {
+        "publish": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "subscribe": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_topics_log": {
+      "fields": {
+        "publish": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "subscribe": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_topics_session": {
+      "fields": {
+        "publish": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "subscribe": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_parameters_topics_transaction": {
+      "fields": {
+        "publish": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "subscribe": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_timeserver.conf": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_xblstv5.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_jobPayload_zonetablei.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Job_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

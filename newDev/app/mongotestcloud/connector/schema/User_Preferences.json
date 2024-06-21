@@ -1,0 +1,317 @@
+{
+  "name": "User_Preferences",
+  "collections": {
+    "User_Preferences": {
+      "type": "User_Preferences"
+    }
+  },
+  "objectTypes": {
+    "User_Preferences": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "User_Preferences_organization"
+            }
+          }
+        },
+        "screenConfiguration": {
+          "type": {
+            "nullable": {
+              "object": "User_Preferences_screenConfiguration"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "userId": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "User_Preferences_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "User_Preferences_screenConfiguration": {
+      "fields": {
+        "collectionName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "configuration": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "User_Preferences_screenConfiguration_configuration"
+              }
+            }
+          }
+        },
+        "screenName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "toolPanel": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "User_Preferences_screenConfiguration_toolPanel"
+              }
+            }
+          }
+        }
+      }
+    },
+    "User_Preferences_screenConfiguration_configuration": {
+      "fields": {
+        "cellDataType": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "columnTitle": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "columnType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "fetchData": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "field": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "filter": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "filterParams": {
+          "type": {
+            "nullable": {
+              "object": "User_Preferences_screenConfiguration_configuration_filterParams"
+            }
+          }
+        },
+        "headerName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "headerTooltip": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "hide": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isFilterable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isSortable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "menuTabs": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "scalar": "undefined"
+              }
+            }
+          }
+        },
+        "minWidth": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "primary": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "sortable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "sortingOrder": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "nullable": {
+                  "scalar": "string"
+                }
+              }
+            }
+          }
+        },
+        "suppressColumnsToolPanel": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "suppressMovable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "width": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        }
+      }
+    },
+    "User_Preferences_screenConfiguration_configuration_filterParams": {
+      "fields": {
+        "buttons": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "scalar": "string"
+              }
+            }
+          }
+        },
+        "closeOnApply": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        }
+      }
+    },
+    "User_Preferences_screenConfiguration_toolPanel": {
+      "fields": {
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "panel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

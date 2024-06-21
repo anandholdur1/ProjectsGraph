@@ -1,0 +1,135 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Students
+  fields:
+    - name: id
+      type: ObjectId!
+    - name: city
+      type: String
+    - name: department
+      type: String
+    - name: name
+      type: String
+  graphql:
+    typeName: App_Students
+    inputTypeName: App_StudentsInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: mongotestcloud
+      dataConnectorObjectType: students
+      fieldMapping:
+        id:
+          column:
+            name: _id
+        city:
+          column:
+            name: city
+        department:
+          column:
+            name: department
+        name:
+          column:
+            name: name
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Students
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - id
+          - city
+          - department
+          - name
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: StudentsBoolExp
+  objectType: Students
+  dataConnectorName: mongotestcloud
+  dataConnectorObjectType: students
+  comparableFields:
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: city
+      operators:
+        enableAll: true
+    - fieldName: department
+      operators:
+        enableAll: true
+    - fieldName: name
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_StudentsBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Students
+  objectType: Students
+  source:
+    dataConnectorName: mongotestcloud
+    collection: students
+  filterExpressionType: StudentsBoolExp
+  orderableFields:
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: city
+      orderByDirections:
+        enableAll: true
+    - fieldName: department
+      orderByDirections:
+        enableAll: true
+    - fieldName: name
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_students
+    selectUniques:
+      - queryRootField: app_studentsById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_StudentsOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Students
+  permissions:
+    - role: admin
+      select:
+        filter: null
+
+---
+kind: Relationship
+version: v1
+definition:
+  name: StudentsUsers
+  sourceType: Students
+  target:
+    model:
+      name: Users
+      subgraph: app
+      relationshipType: Object
+  mapping:
+    - source:
+        fieldPath:
+          - fieldName: name
+      target:
+        modelField:
+          - fieldName: name
+
+
+

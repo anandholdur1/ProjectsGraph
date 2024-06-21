@@ -1,0 +1,89 @@
+{
+  "name": "Claim_Certificate",
+  "collections": {
+    "Claim_Certificate": {
+      "type": "Claim_Certificate"
+    }
+  },
+  "objectTypes": {
+    "Claim_Certificate": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "certificateEndDate": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "certificateId": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "certificateKey": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "certificatePem": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "certificateStartDate": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

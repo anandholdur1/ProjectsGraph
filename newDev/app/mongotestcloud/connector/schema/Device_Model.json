@@ -1,0 +1,91 @@
+{
+  "name": "Device_Model",
+  "collections": {
+    "Device_Model": {
+      "type": "Device_Model"
+    }
+  },
+  "objectTypes": {
+    "Device_Model": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceIdentifierPattern": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isPeripheral": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "supportedSubComponents": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "scalar": "string"
+              }
+            }
+          }
+        },
+        "supportsBundledFirmware": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "uniqueIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

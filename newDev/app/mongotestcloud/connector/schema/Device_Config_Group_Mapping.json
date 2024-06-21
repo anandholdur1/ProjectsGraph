@@ -1,0 +1,132 @@
+{
+  "name": "Device_Config_Group_Mapping",
+  "collections": {
+    "Device_Config_Group_Mapping": {
+      "type": "Device_Config_Group_Mapping"
+    }
+  },
+  "objectTypes": {
+    "Device_Config_Group_Mapping": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "attributes": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "scalar": "string"
+              }
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "scalar": "string"
+              }
+            }
+          }
+        },
+        "deviceSpecific": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "groupMappingIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "groupName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isActive": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isGroup": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "keyIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Device_Config_Group_Mapping_organization"
+            }
+          }
+        },
+        "sourceTable": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_Config_Group_Mapping_organization": {
+      "fields": {
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

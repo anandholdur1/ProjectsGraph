@@ -1,0 +1,149 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: UsersPreferences
+  fields: []
+  graphql:
+    typeName: App_UsersPreferences
+    inputTypeName: App_UsersPreferencesInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: mongotestcloud
+      dataConnectorObjectType: users_preferences
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: UsersPreferences
+  permissions:
+    - role: admin
+      output:
+        allowedFields: []
+
+---
+kind: ObjectType
+version: v1
+definition:
+  name: Users
+  fields:
+    - name: id
+      type: ObjectId!
+    - name: email
+      type: String
+    - name: name
+      type: String
+    - name: password
+      type: String
+    - name: preferences
+      type: UsersPreferences
+  graphql:
+    typeName: App_Users
+    inputTypeName: App_UsersInput
+  dataConnectorTypeMapping:
+    - dataConnectorName: mongotestcloud
+      dataConnectorObjectType: users
+      fieldMapping:
+        id:
+          column:
+            name: _id
+        email:
+          column:
+            name: email
+        name:
+          column:
+            name: name
+        password:
+          column:
+            name: password
+        preferences:
+          column:
+            name: preferences
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: Users
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - id
+          - email
+          - name
+          - password
+          - preferences
+
+---
+kind: ObjectBooleanExpressionType
+version: v1
+definition:
+  name: UsersBoolExp
+  objectType: Users
+  dataConnectorName: mongotestcloud
+  dataConnectorObjectType: users
+  comparableFields:
+    - fieldName: id
+      operators:
+        enableAll: true
+    - fieldName: email
+      operators:
+        enableAll: true
+    - fieldName: name
+      operators:
+        enableAll: true
+    - fieldName: password
+      operators:
+        enableAll: true
+    - fieldName: preferences
+      operators:
+        enableAll: true
+  graphql:
+    typeName: App_UsersBoolExp
+
+---
+kind: Model
+version: v1
+definition:
+  name: Users
+  objectType: Users
+  source:
+    dataConnectorName: mongotestcloud
+    collection: users
+  filterExpressionType: UsersBoolExp
+  orderableFields:
+    - fieldName: id
+      orderByDirections:
+        enableAll: true
+    - fieldName: email
+      orderByDirections:
+        enableAll: true
+    - fieldName: name
+      orderByDirections:
+        enableAll: true
+    - fieldName: password
+      orderByDirections:
+        enableAll: true
+    - fieldName: preferences
+      orderByDirections:
+        enableAll: true
+  graphql:
+    selectMany:
+      queryRootField: app_users
+    selectUniques:
+      - queryRootField: app_usersById
+        uniqueIdentifier:
+          - id
+    orderByExpressionType: App_UsersOrderBy
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: Users
+  permissions:
+    - role: admin
+      select:
+        filter: null
+

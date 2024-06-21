@@ -1,0 +1,199 @@
+{
+  "name": "Software_Import_Log",
+  "collections": {
+    "Software_Import_Log": {
+      "type": "Software_Import_Log"
+    }
+  },
+  "objectTypes": {
+    "Software_Import_Log": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "bucketName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "fileName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "filePath": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "uploadDetail": {
+          "type": {
+            "nullable": {
+              "object": "Software_Import_Log_uploadDetail"
+            }
+          }
+        }
+      }
+    },
+    "Software_Import_Log_uploadDetail": {
+      "fields": {
+        "ETag": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ResponseMetadata": {
+          "type": {
+            "nullable": {
+              "object": "Software_Import_Log_uploadDetail_ResponseMetadata"
+            }
+          }
+        },
+        "ServerSideEncryption": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "VersionId": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Software_Import_Log_uploadDetail_ResponseMetadata": {
+      "fields": {
+        "HTTPHeaders": {
+          "type": {
+            "nullable": {
+              "object": "Software_Import_Log_uploadDetail_ResponseMetadata_HTTPHeaders"
+            }
+          }
+        },
+        "HTTPStatusCode": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "HostId": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "RequestId": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "RetryAttempts": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        }
+      }
+    },
+    "Software_Import_Log_uploadDetail_ResponseMetadata_HTTPHeaders": {
+      "fields": {
+        "content-length": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "date": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "etag": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "server": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "x-amz-id-2": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "x-amz-request-id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "x-amz-server-side-encryption": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "x-amz-version-id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "name": "flyway_schema_history",
+  "collections": {
+    "flyway_schema_history": {
+      "type": "flyway_schema_history"
+    }
+  },
+  "objectTypes": {
+    "flyway_schema_history": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "checksum": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "description": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "execution_time": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "installed_by": {
+          "type": {
+            "scalar": "null"
+          }
+        },
+        "installed_on": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "installed_rank": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "script": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "success": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "type": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "version": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

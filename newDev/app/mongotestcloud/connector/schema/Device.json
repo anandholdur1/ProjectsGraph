@@ -1,0 +1,2840 @@
+{
+  "name": "Device",
+  "collections": {
+    "Device": {
+      "type": "Device"
+    }
+  },
+  "objectTypes": {
+    "Device": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "activationDate": {
+          "type": "extendedJSON"
+        },
+        "brokerClientId": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "configuration": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration"
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceGroup": {
+          "type": {
+            "nullable": {
+              "object": "Device_deviceGroup"
+            }
+          }
+        },
+        "deviceIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceSoftwareVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Device_organization"
+            }
+          }
+        },
+        "password": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "registrationDate": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "softwareVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "object": "Device_status"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration": {
+      "fields": {
+        "classicShadow": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow": {
+      "fields": {
+        "delta": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta"
+            }
+          }
+        },
+        "desired": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired"
+            }
+          }
+        },
+        "reported": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta": {
+      "fields": {
+        "AlphaRteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_AlphaRteLst.bin"
+            }
+          }
+        },
+        "Banner_FF.png": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_Banner_FF.png"
+            }
+          }
+        },
+        "DrvLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_DrvLst.bin"
+            }
+          }
+        },
+        "GenfareBanner.png": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_GenfareBanner.png"
+            }
+          }
+        },
+        "KeyLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_KeyLst.bin"
+            }
+          }
+        },
+        "MBTK_KEYS_FARE_RULES.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_MBTK_KEYS_FARE_RULES.cfg"
+            }
+          }
+        },
+        "RngLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_RngLst.bin"
+            }
+          }
+        },
+        "RteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_RteLst.bin"
+            }
+          }
+        },
+        "RunLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_RunLst.bin"
+            }
+          }
+        },
+        "ScdLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_ScdLst.bin"
+            }
+          }
+        },
+        "TripLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_TripLst.bin"
+            }
+          }
+        },
+        "account_asl.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_account_asl.bin"
+            }
+          }
+        },
+        "bucketName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceLifeCycleStatus": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_deviceLifeCycleStatus"
+            }
+          }
+        },
+        "dllv5i.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_dllv5i.bin"
+            }
+          }
+        },
+        "fragi.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_fragi.bin"
+            }
+          }
+        },
+        "gacf.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_gacf.bin"
+            }
+          }
+        },
+        "gaci.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_gaci.bin"
+            }
+          }
+        },
+        "gfi.ini": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_gfi.ini"
+            }
+          }
+        },
+        "netconfig.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_netconfig.cfg"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_organization"
+            }
+          }
+        },
+        "timeserver.conf": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_timeserver.conf"
+            }
+          }
+        },
+        "xblstv5.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_xblstv5.bin"
+            }
+          }
+        },
+        "zonetablei.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_delta_zonetablei.bin"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_AlphaRteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_Banner_FF.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_DrvLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_GenfareBanner.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_KeyLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_MBTK_KEYS_FARE_RULES.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_RngLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_RteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_RunLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_ScdLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_TripLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_account_asl.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_deviceLifeCycleStatus": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_dllv5i.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_fragi.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_gacf.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_gaci.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_gfi.ini": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_netconfig.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_timeserver.conf": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_xblstv5.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_delta_zonetablei.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired": {
+      "fields": {
+        "AlphaRteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_AlphaRteLst.bin"
+            }
+          }
+        },
+        "Banner_FF.png": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_Banner_FF.png"
+            }
+          }
+        },
+        "DrvLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_DrvLst.bin"
+            }
+          }
+        },
+        "GenfareBanner.png": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_GenfareBanner.png"
+            }
+          }
+        },
+        "KeyLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_KeyLst.bin"
+            }
+          }
+        },
+        "MBTK_KEYS_FARE_RULES.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_MBTK_KEYS_FARE_RULES.cfg"
+            }
+          }
+        },
+        "RngLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_RngLst.bin"
+            }
+          }
+        },
+        "RteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_RteLst.bin"
+            }
+          }
+        },
+        "RunLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_RunLst.bin"
+            }
+          }
+        },
+        "ScdLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_ScdLst.bin"
+            }
+          }
+        },
+        "TripLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_TripLst.bin"
+            }
+          }
+        },
+        "account_asl.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_account_asl.bin"
+            }
+          }
+        },
+        "bucketName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceLifeCycleStatus": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_deviceLifeCycleStatus"
+            }
+          }
+        },
+        "dllv5i.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_dllv5i.bin"
+            }
+          }
+        },
+        "fragi.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_fragi.bin"
+            }
+          }
+        },
+        "gacf.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_gacf.bin"
+            }
+          }
+        },
+        "gaci.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_gaci.bin"
+            }
+          }
+        },
+        "gfi.ini": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_gfi.ini"
+            }
+          }
+        },
+        "netconfig.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_netconfig.cfg"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_organization"
+            }
+          }
+        },
+        "timeserver.conf": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_timeserver.conf"
+            }
+          }
+        },
+        "xblstv5.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_xblstv5.bin"
+            }
+          }
+        },
+        "zonetablei.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_desired_zonetablei.bin"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_AlphaRteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_Banner_FF.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_DrvLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_GenfareBanner.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_KeyLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_MBTK_KEYS_FARE_RULES.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_RngLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_RteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_RunLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_ScdLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_TripLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_account_asl.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_deviceLifeCycleStatus": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_dllv5i.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_fragi.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_gacf.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_gaci.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_gfi.ini": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_netconfig.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_timeserver.conf": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_xblstv5.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_desired_zonetablei.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported": {
+      "fields": {
+        "AlphaRteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_AlphaRteLst.bin"
+            }
+          }
+        },
+        "Banner_FF.png": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_Banner_FF.png"
+            }
+          }
+        },
+        "DrvLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_DrvLst.bin"
+            }
+          }
+        },
+        "GenfareBanner.png": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_GenfareBanner.png"
+            }
+          }
+        },
+        "KeyLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_KeyLst.bin"
+            }
+          }
+        },
+        "MBTK_KEYS_FARE_RULES.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_MBTK_KEYS_FARE_RULES.cfg"
+            }
+          }
+        },
+        "RngLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_RngLst.bin"
+            }
+          }
+        },
+        "RteLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_RteLst.bin"
+            }
+          }
+        },
+        "RunLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_RunLst.bin"
+            }
+          }
+        },
+        "ScdLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_ScdLst.bin"
+            }
+          }
+        },
+        "TripLst.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_TripLst.bin"
+            }
+          }
+        },
+        "account_asl.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_account_asl.bin"
+            }
+          }
+        },
+        "bucketName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceInfo": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_deviceInfo"
+            }
+          }
+        },
+        "deviceLifeCycleStatus": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_deviceLifeCycleStatus"
+            }
+          }
+        },
+        "dllv5i.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_dllv5i.bin"
+            }
+          }
+        },
+        "fragi.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_fragi.bin"
+            }
+          }
+        },
+        "gacf.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_gacf.bin"
+            }
+          }
+        },
+        "gaci.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_gaci.bin"
+            }
+          }
+        },
+        "gfi.ini": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_gfi.ini"
+            }
+          }
+        },
+        "netconfig.cfg": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_netconfig.cfg"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_organization"
+            }
+          }
+        },
+        "timeserver.conf": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_timeserver.conf"
+            }
+          }
+        },
+        "xblstv5.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_xblstv5.bin"
+            }
+          }
+        },
+        "zonetablei.bin": {
+          "type": {
+            "nullable": {
+              "object": "Device_configuration_classicShadow_reported_zonetablei.bin"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_AlphaRteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_Banner_FF.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_DrvLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_GenfareBanner.png": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_KeyLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_MBTK_KEYS_FARE_RULES.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_RngLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_RteLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_RunLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_ScdLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_TripLst.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_account_asl.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_deviceInfo": {
+      "fields": {
+        "AppVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "BillVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-CK": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-CP-App": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-EK": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-HK": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-ID": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-IP": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-MAC": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-OP-App": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-OPT": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-OS": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CVEND-UG-App": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ChassisVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "CoinVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "OSVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "PedestalVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "carrier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "chassisVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "connectionType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceSoftwareVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "device_serial": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ethernetMacAddress": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ethernet_mac": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "firmware_version": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "imei": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ipAddress": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ip_address": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "ocuVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "osVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "pedesterialBoardVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_deviceLifeCycleStatus": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_dllv5i.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_fragi.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_gacf.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_gaci.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_gfi.ini": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_netconfig.cfg": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_timeserver.conf": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_xblstv5.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_configuration_classicShadow_reported_zonetablei.bin": {
+      "fields": {
+        "configType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "crc": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "s3Path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_deviceGroup": {
+      "fields": {
+        "__typename": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "value": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefaultOrganization": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Device_status": {
+      "fields": {
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

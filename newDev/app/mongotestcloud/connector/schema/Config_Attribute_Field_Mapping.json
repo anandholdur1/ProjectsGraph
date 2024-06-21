@@ -1,0 +1,134 @@
+{
+  "name": "Config_Attribute_Field_Mapping",
+  "collections": {
+    "Config_Attribute_Field_Mapping": {
+      "type": "Config_Attribute_Field_Mapping"
+    }
+  },
+  "objectTypes": {
+    "Config_Attribute_Field_Mapping": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "configAttributeKey": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "scalar": "string"
+              }
+            }
+          }
+        },
+        "deviceSpecific": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isActive": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isBundle": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "mappingIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Config_Attribute_Field_Mapping_organization"
+            }
+          }
+        },
+        "sourceTableKeyMapping": {
+          "type": {
+            "nullable": {
+              "object": "Config_Attribute_Field_Mapping_sourceTableKeyMapping"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Config_Attribute_Field_Mapping_organization": {
+      "fields": {
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Config_Attribute_Field_Mapping_sourceTableKeyMapping": {
+      "fields": {
+        "Device": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "Software_Version": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

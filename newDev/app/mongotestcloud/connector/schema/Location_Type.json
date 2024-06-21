@@ -1,0 +1,47 @@
+{
+  "name": "Location_Type",
+  "collections": {
+    "Location_Type": {
+      "type": "Location_Type"
+    }
+  },
+  "objectTypes": {
+    "Location_Type": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "type": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "uniqueIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        }
+      }
+    }
+  }
+}

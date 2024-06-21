@@ -1,0 +1,786 @@
+{
+  "name": "Screen_Configuration",
+  "collections": {
+    "Screen_Configuration": {
+      "type": "Screen_Configuration"
+    }
+  },
+  "objectTypes": {
+    "Screen_Configuration": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "collectionName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "configuration": {
+          "type": "extendedJSON"
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "createdBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "defaultSort": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_defaultSort"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isActive": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "organizationName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "screenName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "toolPanel": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_toolPanel"
+              }
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "updatedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration": {
+      "fields": {
+        "agencyDetails": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_agencyDetails"
+            }
+          }
+        },
+        "columnTitle": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "columnType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "fare": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_fare"
+            }
+          }
+        },
+        "fetchData": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "field": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "fieldGroup": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_configuration_fieldGroup"
+              }
+            }
+          }
+        },
+        "fieldGroupClassName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "firmwareVersion": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_firmwareVersion"
+            }
+          }
+        },
+        "headerTooltip": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "hide": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "hidefield": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isDropDown": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isEditable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isFile": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isFilterable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isHeader": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isSortable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isText": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "labels": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_configuration_labels"
+              }
+            }
+          }
+        },
+        "menuList": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_configuration_menuList"
+              }
+            }
+          }
+        },
+        "metadata": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_metadata"
+            }
+          }
+        },
+        "minWidth": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "primary": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "required": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "suppressColumnsToolPanel": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "suppressMovable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "tabs": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_configuration_tabs"
+              }
+            }
+          }
+        },
+        "terminalConfig": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_terminalConfig"
+            }
+          }
+        },
+        "values": {
+          "type": {
+            "nullable": {
+              "arrayOf": "extendedJSON"
+            }
+          }
+        },
+        "width": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_agencyDetails": {
+      "fields": {
+        "logoURL": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fare": {
+      "fields": {
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fieldGroup": {
+      "fields": {
+        "className": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "expressions": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_fieldGroup_expressions"
+            }
+          }
+        },
+        "hooks": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_fieldGroup_hooks"
+            }
+          }
+        },
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "props": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_fieldGroup_props"
+            }
+          }
+        },
+        "type": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "validation": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_fieldGroup_validation"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fieldGroup_expressions": {
+      "fields": {
+        "hide": {
+          "type": "extendedJSON"
+        },
+        "props.disabled": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "props.pattern": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fieldGroup_hooks": {
+      "fields": {}
+    },
+    "Screen_Configuration_configuration_fieldGroup_props": {
+      "fields": {
+        "cascadedBy": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "dataSource": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "dependOn": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "filter": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "maxLength": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "minLength": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "options": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_configuration_fieldGroup_props_options"
+              }
+            }
+          }
+        },
+        "pattern": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "placeholder": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "readonly": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "required": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fieldGroup_props_options": {
+      "fields": {
+        "_typename": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "value": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fieldGroup_validation": {
+      "fields": {
+        "messages": {
+          "type": {
+            "nullable": {
+              "object": "Screen_Configuration_configuration_fieldGroup_validation_messages"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_fieldGroup_validation_messages": {
+      "fields": {
+        "maxLength": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "pattern": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_firmwareVersion": {
+      "fields": {
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_labels": {
+      "fields": {
+        "field": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isEditable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isHeader": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "key": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "type": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_menuList": {
+      "fields": {
+        "children": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Screen_Configuration_configuration_menuList_children"
+              }
+            }
+          }
+        },
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "link": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_menuList_children": {
+      "fields": {
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "link": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_metadata": {
+      "fields": {
+        "columnType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isFilterable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "isSortable": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_tabs": {
+      "fields": {
+        "identifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "path": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_configuration_terminalConfig": {
+      "fields": {
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_defaultSort": {
+      "fields": {
+        "columnName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "sortOrder": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Screen_Configuration_toolPanel": {
+      "fields": {
+        "label": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "panel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

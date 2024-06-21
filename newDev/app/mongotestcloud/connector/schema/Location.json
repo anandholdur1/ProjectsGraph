@@ -1,0 +1,156 @@
+{
+  "name": "Location",
+  "collections": {
+    "Location": {
+      "type": "Location"
+    }
+  },
+  "objectTypes": {
+    "Location": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "configurationDetails": {
+          "type": {
+            "nullable": {
+              "object": "Location_configurationDetails"
+            }
+          }
+        },
+        "createdAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        },
+        "description": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "isDefault": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "locationIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "locationName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "locationType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Location_organization"
+            }
+          }
+        },
+        "parentIdentifier": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "status": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "updatedAt": {
+          "type": {
+            "nullable": {
+              "scalar": "long"
+            }
+          }
+        }
+      }
+    },
+    "Location_configurationDetails": {
+      "fields": {
+        "deviceSpecific": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Location_configurationDetails_deviceSpecific"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Location_configurationDetails_deviceSpecific": {
+      "fields": {
+        "configuration": {
+          "type": {
+            "nullable": {
+              "object": "Location_configurationDetails_deviceSpecific_configuration"
+            }
+          }
+        },
+        "deviceModel": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Location_configurationDetails_deviceSpecific_configuration": {
+      "fields": {
+        "firmwareVersion": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Location_organization": {
+      "fields": {
+        "id": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+kind: ConnectorManifest
+version: v1
+spec:
+  supergraphManifests:
+    - base
+definition:
+  name: mongotestcloud
+  type: cloud
+  connector:
+    type: hub
+    name: hasura/mongodb:v0.1.0
+  deployments:
+    - context: .
+      env:
+        MONGODB_DATABASE_URI:
+          value: mongodb://dbadmin:tipHA3iPrIfregerzeQiKi@gfcp-mongo-ddn-dev.test.gfcp.io:80/GenfareDB

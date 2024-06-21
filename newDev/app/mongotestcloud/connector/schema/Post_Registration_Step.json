@@ -1,0 +1,135 @@
+{
+  "name": "Post_Registration_Step",
+  "collections": {
+    "Post_Registration_Step": {
+      "type": "Post_Registration_Step"
+    }
+  },
+  "objectTypes": {
+    "Post_Registration_Step": {
+      "fields": {
+        "_id": {
+          "type": {
+            "scalar": "objectId"
+          }
+        },
+        "businessMetadata": {
+          "type": {
+            "nullable": {
+              "object": "Post_Registration_Step_businessMetadata"
+            }
+          }
+        },
+        "deviceFamily": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "deviceModels": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "organization": {
+          "type": {
+            "nullable": {
+              "object": "Post_Registration_Step_organization"
+            }
+          }
+        },
+        "steps": {
+          "type": {
+            "nullable": {
+              "arrayOf": {
+                "object": "Post_Registration_Step_steps"
+              }
+            }
+          }
+        },
+        "templateType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Post_Registration_Step_businessMetadata": {
+      "fields": {
+        "businessKey": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Post_Registration_Step_organization": {
+      "fields": {
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    },
+    "Post_Registration_Step_steps": {
+      "fields": {
+        "isMandatory": {
+          "type": {
+            "nullable": {
+              "scalar": "bool"
+            }
+          }
+        },
+        "name": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "sequenceNo": {
+          "type": {
+            "nullable": {
+              "scalar": "int"
+            }
+          }
+        },
+        "stepData": {
+          "type": {
+            "nullable": {
+              "object": "Post_Registration_Step_steps_stepData"
+            }
+          }
+        }
+      }
+    },
+    "Post_Registration_Step_steps_stepData": {
+      "fields": {
+        "configurationType": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        },
+        "templateName": {
+          "type": {
+            "nullable": {
+              "scalar": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
